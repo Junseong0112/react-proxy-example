@@ -5,6 +5,7 @@ import BookTable from './components/BookTable';
 import DisplayBoard from './components/DisplayBoard';
 import CreateBook from './components/CreateBook';
 import { getAllBooks, createBook } from './services/BookService';
+import Todo from './components/Todo';
 import Footer from './components/Footer';
 
 function App () {
@@ -55,6 +56,7 @@ function App () {
           getAllBook={getAllBook} 
         />
         <BookTable books={books} />
+        <Todo />
         <Footer />
       </div>
     </div>
